@@ -8,14 +8,14 @@
 
 复制下面这句话给 Codex、Claude Code 或其他支持 Agent Skills 的助手。
 
-> 请从 https://github.com/Rain-dust/un 安装 `paperfold` 技能到当前项目，按仓库 README 验证安装，并告诉我如何调用。
+> 请从 https://github.com/Rain-dust/paperfold 安装 `paperfold` 技能到当前项目，按仓库 README 验证安装，并告诉我如何调用。
 
 ### 单命令安装
 
 在你要使用技能的项目目录运行。需要 Git、Node.js 和 npm。把 `codex` 换成 `claude-code` 或你使用的 [Agent 标识](https://github.com/vercel-labs/skills#supported-agents)。
 
 ```sh
-npx --yes skills add Rain-dust/un --skill paperfold --agent codex --copy --yes
+npx --yes skills add Rain-dust/paperfold --skill paperfold --agent codex --copy --yes
 ```
 
 命令默认安装到当前项目。需要跨项目使用时可加 `--global`。安装后检查 CLI 报告的目录是否包含 `SKILL.md` 和完整的 `assets/turning-garden/`，然后在 Agent 的技能列表里查找 `paperfold`。如果已打开的会话还未显示，刷新技能列表或从目标项目新开会话。
@@ -45,7 +45,7 @@ node skills/paperfold/scripts/render.cjs skills/paperfold/assets/turning-garden/
 
 ## 安装与使用（English）
 
-Ask your agent to install `paperfold` from https://github.com/Rain-dust/un in the current project, verify the installation against this README, and report how to invoke it. The CLI command above installs the skill for Codex. After installation, ask for a new scene by naming `paperfold` and specifying a subject and deliverables.
+Ask your agent to install `paperfold` from https://github.com/Rain-dust/paperfold in the current project, verify the installation against this README, and report how to invoke it. The CLI command above installs the skill for Codex. After installation, ask for a new scene by naming `paperfold` and specifying a subject and deliverables.
 
 The bundled example is an editable, offline WebGL diorama. It includes an animated radial fold, day-to-dusk lighting, live props, and touch controls. The frame renderer supports PNG or H.264 MP4 with an optional separate audio track.
 
