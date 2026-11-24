@@ -2,7 +2,7 @@
 
 ## 改造模板
 
-将 [turning-garden](../assets/turning-garden/index.html) 所在目录整体复制到作品目录，再打开副本的 `index.html`。相对路径引用同目录的脚本、样式和音效，浏览器支持 WebGL 即可本地预览。
+需要复用引擎时，将 [turning-garden](../assets/turning-garden/index.html) 所在目录整体复制到作品目录，再打开副本的 `index.html`。相对路径引用同目录的脚本、样式和音效，浏览器支持 WebGL 即可本地预览。用 [设计与审片](direction.md) 选定拍点，按新题材更换页图、地表、构件、场景活动和照明声效，按新模型的占地和画幅重算构图。示例的折叠与导出入口可以复用。
 
 | 修改目标 | 模板入口 |
 | --- | --- |

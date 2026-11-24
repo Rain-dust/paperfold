@@ -18,11 +18,16 @@ assert.equal(frontmatter[1].match(/^name:\s+(\S+)$/m)?.[1], slug);
 assert.ok(/^description:\s+\S/m.test(frontmatter[1]), "SKILL.md needs a description");
 assert.ok(read(path.join(skill, "agents", "openai.yaml")).includes("$" + slug));
 
+const references = path.join(skill, "references");
+const referenceDocs = fs.readdirSync(references, { withFileTypes: true })
+  .filter(entry => entry.isFile() && entry.name.endsWith(".md"))
+  .map(entry => path.join(references, entry.name));
+
 for (const file of [
   markdown,
   path.join(repo, "README.md"),
   path.join(repo, "AGENTS.md"),
-  path.join(skill, "references", "production.md"),
+  ...referenceDocs,
 ]) {
   for (const [, target] of read(file).matchAll(/\]\(([^\s)]+)\)/g)) {
     if (/^(https?:|#)/.test(target)) continue;

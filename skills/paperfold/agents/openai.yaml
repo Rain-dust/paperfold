@@ -1,4 +1,4 @@
 interface:
   display_name: "纸境 · Paperfold"
-  short_description: "用共轴立页翻出圆形纸雕世界，制作像《风过瓦檐》一样的动效与互动场景"
-  default_prompt: "用 $paperfold 做一段 12 秒的山间茶铺折纸动画，让庭院绕竖直书脊展开一圈，最后灯亮、檐铃随风摇动。"
+  short_description: "用共轴立页展开圆形纸雕世界，从开场引导、折叠揭晓到收束，制作短片与互动景观"
+  default_prompt: "用 $paperfold 做一个高彩纸雕潮沟，让纸岸展开后露出水路，最后看一小股潮水分流。"
