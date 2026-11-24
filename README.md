@@ -6,6 +6,8 @@
 
 技能把《风过瓦檐 · 燕起灯时》的开场引导、结构揭晓和展开后的余韵转成创作流程。新作品可以随题材决定画风、色彩、节奏和结尾。用场景里合理的角色、物件或自然现象带视线，再按起因和节奏安排水、风与枝叶的反应。[样片拍点与审片方法](skills/paperfold/references/direction.md)
 
+制作自然场景时，可以逐项核对山脚接地、云层入场，以及水源到下游的连续性。 [自然场景检查](skills/paperfold/references/production.md#检查自然场景)
+
 ## 一句话交给 Agent
 
 复制下面这句话给 Codex、Claude Code 或其他支持 Agent Skills 的助手。
@@ -49,7 +51,7 @@ node skills/paperfold/scripts/render.cjs skills/paperfold/assets/turning-garden/
 
 Ask your agent to install `paperfold` from https://github.com/Rain-dust/paperfold in the current project, verify the installation against this README, and report how to invoke it. The CLI command above installs the skill for Codex. After installation, ask for a new scene by naming `paperfold` and specifying a subject and deliverables.
 
-The [direction and review guide](skills/paperfold/references/direction.md) uses a reference film to explain how to guide attention from the first cue through a physical reveal to a readable ending. The bundled example is an editable, offline WebGL diorama. It includes an animated radial fold, day-to-dusk lighting, live props, and touch controls. The frame renderer supports PNG or H.264 MP4 with an optional separate audio track.
+The [direction and review guide](skills/paperfold/references/direction.md) uses a reference film to explain how to guide attention from the first cue through a physical reveal to a readable ending. The guide also covers terrain support, gradual cloud entrances, and water continuity from source to outlet. The bundled example is an editable, offline WebGL diorama. It includes an animated radial fold, day-to-dusk lighting, live props, and touch controls. The frame renderer supports PNG or H.264 MP4 with an optional separate audio track.
 
 ## 来源
 
