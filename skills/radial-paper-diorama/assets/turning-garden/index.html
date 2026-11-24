@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>风过瓦檐</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="life.js"></script>
+  <script defer src="lanterns.js"></script>
+  <script defer src="cat.js"></script>
+  <script defer src="garden.js"></script>
+  <script defer src="pages.js"></script>
+  <script defer src="fold.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>风过瓦檐</h1>
+      <p>拖动纸边开合。点橘猫逗它，点路灯切换晨昏。</p>
+    </header>
+    <section class="stage" aria-label="圆形纸雕庭院">
+      <canvas id="garden" tabindex="0" aria-label="纸雕庭院。左右方向键开合，展开后拖动庭院环看。滚轮或双指捏合缩放。"></canvas>
+      <p id="fallback" hidden>请在支持 WebGL 的浏览器中打开。</p>
+    </section>
+    <section class="actions" aria-label="庭院互动">
+      <button id="gust" type="button">吹一阵风</button>
+      <button id="flight" type="button">唤纸燕</button>
+      <button id="cat-call" type="button">逗橘猫</button>
+      <button id="lamps" type="button" aria-pressed="false">切到黄昏</button>
+      <button id="awning" type="button">收起布棚</button>
+      <button id="orbit" type="button" aria-pressed="false">拖动环看</button>
+      <button id="reset" type="button">视角复位</button>
+      <label class="sound-control"><input id="sound" type="checkbox">互动音效</label>
+      <span>滚轮或双指缩放</span>
+    </section>
+    <p id="status" class="visually-hidden" role="status"></p>
+    <section class="transport" aria-label="展开进度">
+      <button id="play" type="button" aria-label="播放">播放</button>
+      <label for="seek" class="visually-hidden">展开角度</label>
+      <div class="track">
+        <input type="range" id="seek" min="0" max="360" step="1" value="0">
+        <div class="marks" aria-hidden="true"><span>0°</span><span>90°</span><span>180°</span><span>270°</span><span>360°</span></div>
+      </div>
+      <output id="angle" for="seek">000°</output>
+    </section>
+  </main>
+</body>
+</html>

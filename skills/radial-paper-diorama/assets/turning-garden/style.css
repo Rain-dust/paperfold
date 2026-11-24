@@ -1,0 +1,47 @@
+:root {
+  font-family: "Microsoft YaHei UI", "PingFang SC", sans-serif;
+  color: #3d5146;
+  background: #f0e9dc;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1110px; padding: 24px 32px 28px; margin: auto; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; }
+h1 { margin: 0 0 14px; font: 600 clamp(24px, 4vw, 38px)/1.3 "STSong", "SimSun", serif; letter-spacing: .11em; }
+header p { margin: 0; color: #575f51; font-size: 13px; }
+.stage { position: relative; background: radial-gradient(ellipse at 46% 30%, #fbf5e7 0%, #e9e5d3 58%, #cbd4c0 100%); border-radius: 6px; overflow: hidden; }
+#garden { display:block; width:100%; height:clamp(360px, 69vh, 700px); cursor:grab; touch-action: none; }
+#garden:active { cursor:grabbing; }
+#garden:focus-visible { outline: 2px solid #557062; outline-offset: -3px; }
+#fallback { position:absolute; inset:25px; margin: 0; }
+.transport { display:grid; grid-template-columns: 78px minmax(0, 1fr) 68px; gap: 25px; align-items: start; padding-top: 18px; }
+#play { background: #395447; color:#fbf4e5; cursor: pointer; border: 0; border-radius: 5px; padding:9px 0; font: inherit; font-size: 14px; }
+#play:hover { background:#486659; }
+.track { padding-top:2px; }
+#seek { width:100%; height:18px; margin:0; cursor:pointer; accent-color:#a6553e; }
+.marks { font: 11px ui-monospace, monospace; color:#5f6659; display:flex; justify-content:space-between; margin-top:3px; }
+#angle { margin-top: 1px; text-align:right; font: 500 22px ui-monospace, monospace; font-variant-numeric:tabular-nums; color:#3e4c40; }
+.visually-hidden { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.actions { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:14px; }
+.actions button { font:inherit; font-size:13px; padding:7px 12px; border:1px solid #bcc4ae; color:#385246; background:#f6f2e5; border-radius:5px; cursor:pointer; }
+.actions button:hover,.actions button.selected { background:#d9e3cf; border-color:#829c82; }
+.actions button:disabled { opacity:.43; cursor:default; }
+.actions span { font-size:12px; color:#606958; margin-left:auto; }
+.sound-control { display:inline-flex; align-items:center; gap:4px; font-size:12px; cursor:pointer; }
+.sound-control input { accent-color:#467160; }
+body.export main { max-width:none; padding:0; }
+body.export header, body.export .transport, body.export .actions { display:none; }
+body.export .stage { border-radius:0; }
+body.export #garden { height:100vh; }
+@media(max-width: 620px) {
+  main { padding: 16px 14px 22px; }
+  header { display:block; margin-bottom: 12px; }
+  h1 { margin-bottom:5px; }
+  #garden { height:clamp(300px, 53vh, 550px); }
+  .transport { grid-template-columns: 72px minmax(0, 1fr) 47px; gap: 13px; }
+  .actions { gap:6px; }
+  .actions button { padding:7px 9px; }
+  .actions span { margin-left:0; }
+  #angle { font-size:17px; padding-top: 3px; }
+}

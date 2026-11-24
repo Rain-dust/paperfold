@@ -1,0 +1,7 @@
+node_modules/
+.agents/
+.codex/
+.claude/
+skills-lock.json
+.radial-render-*/
+/wind-over-eaves.mp4
