@@ -1,4 +1,0 @@
-interface:
-  display_name: "风过瓦檐 · 圆形折纸微缩景观"
-  short_description: "用共轴立页翻出圆形纸雕世界，制作像《风过瓦檐》一样的动效与互动场景"
-  default_prompt: "用 $radial-paper-diorama 做一段 12 秒的山间茶铺折纸动画，让庭院绕竖直书脊展开一圈，最后灯亮、檐铃随风摇动。"

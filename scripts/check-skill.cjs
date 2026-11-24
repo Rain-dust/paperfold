@@ -6,7 +6,7 @@ const path = require("node:path");
 const vm = require("node:vm");
 
 const repo = path.join(__dirname, "..");
-const slug = "radial-paper-diorama";
+const slug = "paperfold";
 const skill = path.join(repo, "skills", slug);
 const template = path.join(skill, "assets", "turning-garden");
 const read = file => fs.readFileSync(file, "utf8");

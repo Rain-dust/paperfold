@@ -1,12 +1,12 @@
 ---
-name: radial-paper-diorama
+name: paperfold
 description: 制作《风过瓦檐》式圆形折纸微缩景观。适用于两张立页绕竖直书脊翻开 0–360°、扇形地纸随折痕铺开、立体场景逐段立起并持续活动的动效设计、交互网页和动画短片。 Use for radial paper pop-ups, interactive dioramas, and short unfolding animations.
 metadata:
   author: Rain-dust
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
-# 风过瓦檐 · 圆形折纸微缩景观
+# 纸境 · Paperfold
 
 用两张共用竖直书脊的纸页，翻出一个完整的圆形立体景观。横向开合的角度决定纸地和场景的展开状态。风、光和角色的活动由独立时钟驱动，纸页折完后场景还能继续活动。建筑、题材和画幅跟用户的需求走。
 

@@ -1,6 +1,6 @@
 # Repository guide for agents
 
-The published skill lives in `skills/radial-paper-diorama/`. Its `SKILL.md` name, parent directory, Codex prompt, and README install command use the same slug.
+The published skill lives in `skills/paperfold/`. Its `SKILL.md` name, parent directory, Codex prompt, and README install command use the same slug.
 
 ## Install requests
 
@@ -10,4 +10,4 @@ The published skill lives in `skills/radial-paper-diorama/`. Its `SKILL.md` name
 
 ## Development
 
-Run `node scripts/check-skill.cjs` from the repository root. For rendering changes also render a still and a short MP4 following [the production guide](skills/radial-paper-diorama/references/production.md). Keep the offline demo's assets relative so copying the skill folder keeps it usable.
+Run `node scripts/check-skill.cjs` from the repository root. For rendering changes also render a still and a short MP4 following [the production guide](skills/paperfold/references/production.md). Keep the offline demo's assets relative so copying the skill folder keeps it usable.
